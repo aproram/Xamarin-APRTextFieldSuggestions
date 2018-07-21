@@ -11,12 +11,14 @@ namespace APRTextField
     {
         void suggestionTextField_userSelectedItem(int itemIndex, string itemVal);
     }
-    public interface iInnerSuggestionDelegate
+    interface iInnerSuggestionDelegate
     {
         void InnerDelegate_selectedAnItem(int itemIndex);
     }
+
     public partial class APRTextFieldSuggestions :  iInnerSuggestionDelegate
     {
+        
         UITextField theTF;
         public float suggestionRowHeight = 30;
         public float suggestionFontSize = 13;
@@ -113,9 +115,14 @@ namespace APRTextField
             CoreGraphics.CGRect tableFrame = suggestionsTable.Frame;
 
         }
-        public void InnerDelegate_selectedAnItem(int itemIndex)
+        public void InnerDelegate_selectedAnItem(int itemIndexInFiltered)
         {
-            string itemVal = filteredSuggestionsData[itemIndex];
+            
+            string itemValInsideFiltered = filteredSuggestionsData[itemIndexInFiltered];
+            List<string> allSuggestionsList = AllSuggestionsData.ToList();
+
+            int itemIndex=allSuggestionsList.IndexOf(itemValInsideFiltered);
+            string itemVal =allSuggestionsList[itemIndex];
             if(this.myDelegate!=null)
                 this.myDelegate.suggestionTextField_userSelectedItem(itemIndex, itemVal);
 
