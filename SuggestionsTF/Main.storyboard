@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type to test suggestions" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="197">
+                                <rect key="frame" x="36" y="153" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type to test suggestions" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4545">
+                                <rect key="frame" x="36" y="383" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APRTextFieldSuggestions Demo 1 (Standard)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9e-nW-dl2">
+                                <rect key="frame" x="41" y="130" width="254" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APRTextFieldSuggestions Demo 2 (Big)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIY-7r-WmF">
+                                <rect key="frame" x="41" y="360" width="223" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99048223350253806" green="0.99048223350253806" blue="0.99048223350253806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="197" secondAttribute="centerX" id="3936"/>
+                            <constraint firstItem="197" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3937"/>
+                            <constraint firstItem="197" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="133" id="4340"/>
+                            <constraint firstItem="4545" firstAttribute="leading" secondItem="197" secondAttribute="leading" id="4546"/>
+                            <constraint firstItem="4545" firstAttribute="trailing" secondItem="197" secondAttribute="trailing" id="4547"/>
+                            <constraint firstItem="4545" firstAttribute="top" secondItem="197" secondAttribute="bottom" constant="200" id="4548"/>
+                            <constraint firstItem="197" firstAttribute="leading" secondItem="J9e-nW-dl2" secondAttribute="leading" constant="-5" id="16w-tk-joI"/>
+                            <constraint firstItem="LIY-7r-WmF" firstAttribute="leading" secondItem="J9e-nW-dl2" secondAttribute="leading" id="MbZ-V0-KsM"/>
+                            <constraint firstItem="197" firstAttribute="top" secondItem="J9e-nW-dl2" secondAttribute="bottom" constant="8" id="WEU-4r-c51"/>
+                            <constraint firstItem="4545" firstAttribute="top" secondItem="LIY-7r-WmF" secondAttribute="bottom" constant="8" id="o9I-Uw-4F4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txt1" destination="197" id="name-outlet-197"/>
+                        <outlet property="txt2" destination="4545" id="name-outlet-4545"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>

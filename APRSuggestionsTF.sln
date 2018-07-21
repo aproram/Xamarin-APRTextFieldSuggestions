@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APRSuggestionsTF", "SuggestionsTF\APRSuggestionsTF.csproj", "{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Release|iPhone.ActiveCfg = Release|iPhone
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Release|iPhone.Build.0 = Release|iPhone
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{2881E49A-FEE4-492C-B8D4-B5EC6AB4B025}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
