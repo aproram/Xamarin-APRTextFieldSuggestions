@@ -4,7 +4,7 @@ Xamarin.iOS Autocomplete suggestions for UITextfield in iOS
 ## Screenshot
 ![APRTextFieldSuggestions_screenshot](https://github.com/aproram/Xamarin-APRTextFieldSuggestions/raw/master/Xamarin-APRTextFieldSuggestions_screenshot.png)
 ## Installation
-Simply import the file ```APRTextFieldSuggestions.c``` to your Xamarin.iOS project
+Simply import the file ```APRTextFieldSuggestions.cs``` to your Xamarin.iOS project
 
 ## Usage
 
